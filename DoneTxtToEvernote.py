@@ -19,10 +19,10 @@ body = ""
 with open(DONE, 'r') as done_file:
     for line in done_file:
         if line.startswith(search_string):
-            body += line[2:].rstrip()
+            body += line[13:].rstrip() + '\n'
             count += 1
 
-ARGS = ' create --title "' + str(count) + ' tasks completed ' + today +
+ARGS = ' create --title "' + str(count) + ' tasks completed ' + today + \
   '" --content "' + body + '" --notebook ' + NOTEBOOK
 
 subprocess.call(GEEKNOTE + ARGS, shell = True)
