@@ -1,5 +1,11 @@
 #!/usr/bin/python
+'''
+Parse a done.txt file in the format of Gina Trapani's todo.txt application for
+items done $TODAY. Concatenate those items in a string and use Geeknote to
+create a note in Evernote with those items as the body.
+'''
 
+# Import python libs
 import time
 import subprocess
 
