@@ -8,13 +8,13 @@ GEEKNOTE = '/usr/local/bin/geeknote'
 PREFIX = 'x '
 NOTEBOOK = 'Done'
 
-today = time.strftime("%Y-%m-%d")
+today = time.strftime(''%Y-%m-%d')
 
 search_string = PREFIX + today
 
 count = 0
 
-body = ""
+body = ''
 
 with open(DONE, 'r') as done_file:
     for line in done_file:
