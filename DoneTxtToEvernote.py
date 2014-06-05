@@ -8,7 +8,7 @@ GEEKNOTE = '/usr/local/bin/geeknote'
 PREFIX = 'x '
 NOTEBOOK = 'Done'
 
-today = time.strftime(''%Y-%m-%d')
+today = time.strftime('%Y-%m-%d')
 
 search_string = PREFIX + today
 
